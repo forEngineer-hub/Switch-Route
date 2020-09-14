@@ -22,4 +22,16 @@ function App() {
   );
 }
 
+// with switch, we can avoid render mutiple components.
+// path='/hats' will render both path='/' page and the path='/hats' page.
+// we can solve this by add exact in <Route  like <Route exact path='/' component={HomePage} />
+// function App() {
+//   return (
+//     <div>
+//         <Route exact path='/' component={HomePage} />
+//         <Route path='/hats' component={HatsPage} />
+//     </div>
+//   );
+// }
+
 export default App;
